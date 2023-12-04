@@ -6,6 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + Lit</title>
     <script type="module" src="/src/memory-card"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', async () => {
+          try {
+            const registration = await navigator.serviceWorker.register('./sw.js');
+            console.log('Service Worker registrado con éxito:', registration);
+          } catch (error) {
+            console.error('Error al registrar el Service Worker:', error);
+          }
+        });
+      }
+    </script>
   </head>
   <body>
     <memory-card></memory-card>
