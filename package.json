@@ -11,7 +11,9 @@
   "dependencies": {
     "lit": "^3.0.2",
     "pwa-helpers": "^0.9.1",
-    "uuid": "^9.0.1"
+    "uuid": "^9.0.1",
+    "vite-plugin-pwa": "^0.17.2",
+    "workbox": "^0.0.0"
   },
   "devDependencies": {
     "vite": "^5.0.0"
