@@ -6,159 +6,159 @@ import { icons } from "../utils/icons.js";
 
 export class ViewCard extends PageViewElement {
     static styles = css`
-    .header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 16px;
-      background-color: #004481;
-      color: #fff;
-    }
+        .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 16px;
+        background-color: #004481;
+        color: #fff;
+        }
 
-    .card-container {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 12px;
-      justify-items: center;
-      align-items: center;
-      padding: 16px;
-    }
-
-    .card {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      height: 80px;
-      font-size: 20px;
-      background-color: #eee;
-      cursor: pointer;
-    }
-
-    .username {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .username-icon {
-      width: 20px;
-      height: 20px;
-    }
-
-    .level-select-wrapper {
-      gap: 8px;
-    }
-
-    .level-label {
-      font-size: 14px;
-      font-weight: bold;
-    }
-
-    .level-select {
-      padding: 6px;
-      font-size: 14px;
-    }
-
-    /* Estilos responsivos para dispositivos móviles */
-    @media (max-width: 600px) {
-      .level-select-wrapper {
-        flex-direction: row;
-      }
-
-      .level-select {
-        margin-top: 8px;
-      }
-    }
-
-    .new-game {
-      display: block;
-      text-align: center;
-      font-weight: bold;
-    }
-
-    .new-game-button {
-      padding: 8px 16px;
-      font-size: 16px;
-      background-color: #0c186c;
-      color: #fff;
-      border: none;
-      display: block;
-      margin: 0 auto;
-      border-radius: 4px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-
-    .new-game-button:hover {
-      background-color: #061049;
-    }
-
-    .question-mark {
-      font-size: 32px;
-    }
-
-    .correct-answer {
-      background-color: green;
-    }
-
-    .wrong-answer {
-      background-color: red;
-    }
-
-    .disabled {
-      pointer-events: none;
-    }
-
-    .score {
-      font-size: 24px;
-      font-weight: 300;
-    }
-
-    .level-select {
-      font-size: 16px;
-      padding: 8px;
-    }
-
-    .timer,
-    .game-phrase {
-      text-align: center;
-      font-weight: bold;
-      font-size: 16px;
-      align-items: center;
-      width: 100%;
-    }
-
-    .score-wrapper {
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      margin-right: 16px;
-    }
-
-    .hide {
-      display: none;
-    }
-
-    .play-button-container {
-      display: flex;
-      justify-content: center;
-      margin-top: 16px;
-    }
-
-    @media (max-width: 600px) {
-      .card-container {
+        .card-container {
+        display: grid;
         grid-template-columns: repeat(3, 1fr);
-      }
-    }
+        gap: 12px;
+        justify-items: center;
+        align-items: center;
+        padding: 16px;
+        }
 
-    @media (max-width: 410px) {
-      .card-container {
-        grid-template-columns: repeat(3, 1fr);
+        .card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 80px;
+        font-size: 20px;
+        background-color: #eee;
+        cursor: pointer;
+        }
+
+        .username {
+        display: flex;
+        align-items: center;
         gap: 8px;
-      }
-    }
-  `;
+        }
+
+        .username-icon {
+        width: 20px;
+        height: 20px;
+        }
+
+        .level-select-wrapper {
+        gap: 8px;
+        }
+
+        .level-label {
+        font-size: 14px;
+        font-weight: bold;
+        }
+
+        .level-select {
+        padding: 6px;
+        font-size: 14px;
+        }
+
+        /* Estilos responsivos para dispositivos móviles */
+        @media (max-width: 600px) {
+        .level-select-wrapper {
+            flex-direction: row;
+        }
+
+        .level-select {
+            margin-top: 8px;
+        }
+        }
+
+        .new-game {
+        display: block;
+        text-align: center;
+        font-weight: bold;
+        }
+
+        .new-game-button {
+        padding: 8px 16px;
+        font-size: 16px;
+        background-color: #0c186c;
+        color: #fff;
+        border: none;
+        display: block;
+        margin: 0 auto;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        }
+
+        .new-game-button:hover {
+        background-color: #061049;
+        }
+
+        .question-mark {
+        font-size: 32px;
+        }
+
+        .correct-answer {
+        background-color: green;
+        }
+
+        .wrong-answer {
+        background-color: red;
+        }
+
+        .disabled {
+        pointer-events: none;
+        }
+
+        .score {
+        font-size: 24px;
+        font-weight: 300;
+        }
+
+        .level-select {
+        font-size: 16px;
+        padding: 8px;
+        }
+
+        .timer,
+        .game-phrase {
+        text-align: center;
+        font-weight: bold;
+        font-size: 16px;
+        align-items: center;
+        width: 100%;
+        }
+
+        .score-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-right: 16px;
+        }
+
+        .hide {
+        display: none;
+        }
+
+        .play-button-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 16px;
+        }
+
+        @media (max-width: 600px) {
+        .card-container {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        }
+
+        @media (max-width: 410px) {
+        .card-container {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+        }
+        }
+    `;
 
     static get properties() {
         return {
@@ -195,91 +195,94 @@ export class ViewCard extends PageViewElement {
 
     render() {
         return html`
-      <div class="header">
-        <div class="username">
-          <span class="username-icon" alt="User Icon">${icons.user}</span>
-          <span>${this.username.username}</span>
-        </div>
-        <div class="level-select-wrapper">
-          <span class="level-label">Level</span>
-          <select
-            class="level-select"
-            name="selector"
-            @change=${this.onLevelSelectChange}
-            aria-label="Select level"
-          >
-            <option value="easy" ?selected=${this.selectedLevel === "easy"}>
-              Easy
-            </option>
-            <option value="medium" ?selected=${this.selectedLevel === "medium"}>
-              Medium
-            </option>
-            <option
-              value="difficult"
-              ?selected=${this.selectedLevel === "difficult"}
-            >
-              Difficult
-            </option>
-          </select>
-        </div>
-      </div>
-      ${this.showPlayButtonMessage
+            <div class="header">
+                <div class="username">
+                <span class="username-icon" alt="User Icon">${icons.user}</span>
+                <span>${this.username.username}</span>
+                </div>
+                <div class="level-select-wrapper">
+                <span class="level-label">Level</span>
+                <select
+                    class="level-select"
+                    name="selector"
+                    @change=${this.onLevelSelectChange}
+                    aria-label="Select level"
+                >
+                    <option value="easy" ?selected=${this.selectedLevel === "easy"}>
+                    Easy
+                    </option>
+                    <option
+                    value="medium"
+                    ?selected=${this.selectedLevel === "medium"}
+                    >
+                    Medium
+                    </option>
+                    <option
+                    value="difficult"
+                    ?selected=${this.selectedLevel === "difficult"}
+                    >
+                    Difficult
+                    </option>
+                </select>
+                </div>
+            </div>
+            ${this.showPlayButtonMessage
                 ? html`
-            <div class="game-phrase">
-              <p class="new-game">Click play button to start a new game</p>
-            </div>
-            <div class="play-button-container">
-              <button class="new-game-button" @click=${this.startNewGame}>
-                Play
-              </button>
-            </div>
-          `
+                    <div class="game-phrase">
+                    <p class="new-game">Click play button to start a new game</p>
+                    </div>
+                    <div class="play-button-container">
+                    <button class="new-game-button" @click=${this.startNewGame}>
+                        Play
+                    </button>
+                    </div>
+                `
                 : html`
-            <div class="score-wrapper">
-              <div class="score">Points: ${this.score}</div>
-            </div>
-            <div class="game-phrase">
-              <p>
-                ${this.showNumbers
+                    <div class="score-wrapper">
+                    <div class="score">Points: ${this.score}</div>
+                    </div>
+                    <div class="game-phrase">
+                    <p>
+                        ${this.showNumbers
                         ? "Memorize the cards"
                         : `¿Where is the number ${this.targetNumber}?`}
-              </p>
-            </div>
-            <div class="timer ${this.gameStarted ? "" : "hide"}">
-              Time left: ${this.timer} seconds
-            </div>
-          `}
+                    </p>
+                    </div>
+                    <div class="timer ${this.gameStarted ? "" : "hide"}">
+                    Time left: ${this.timer} seconds
+                    </div>
+                `}
 
-      <div class="card-container">
-        ${this.cards.map(
-                            (card, index) => html`
-            <div
-              name="cards"
-              class="card ${this.gameStarted
-                                    ? "disabled"
-                                    : ""} ${this.isClicked(index)
-                                        ? "clicked"
-                                        : ""} ${this.getCardColor(index)}"
-              @click=${() => this.onCardClick(index)}
-            >
-              ${this.showNumbers || this.isClicked(index)
-                                    ? card
-                                    : html`<span class="question-mark">&#63;</span>`}
+            <div class="card-container">
+                ${this.cards.map(
+                (card, index) => html`
+                    <div
+                    name="cards"
+                    class="card ${this.gameStarted
+                        ? "disabled"
+                        : ""} ${this.isClicked(index)
+                        ? "clicked"
+                        : ""} ${this.getCardColor(index)}"
+                    @click=${() => this.onCardClick(index)}
+                    >
+                    ${this.showNumbers || this.isClicked(index)
+                        ? card
+                        : html`<span class="question-mark">&#63;</span>`}
+                    </div>
+                `
+                )}
             </div>
-          `
-                        )}
-      </div>
 
-      ${this.showPlayButton
+            ${this.showPlayButton
                 ? html`
-            <div class="play-button-container" ?hidden=${!this.gameStarted}>
-              <button class="new-game-button" @click=${this.startNewGame}>
-                Play
-              </button>
-            </div>
-          `
+                    <div class="play-button-container" ?hidden=${!this.gameStarted}>
+                    <button class="new-game-button" @click=${this.startNewGame}>
+                        Play
+                    </button>
+                    </div>
+                `
                 : ""}
-    `;
+        `;
     }
 
     isCorrectCard(index) {
